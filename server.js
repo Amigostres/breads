@@ -9,6 +9,9 @@ console.log(PORT);
 
 //middleware
 app.use(express.static(`public`))
+app.use(express.urlencoded({extended:true}))
+
+
 
 app.set(`views`, __dirname + `/views`)
 app.set(`view engine`, `jsx`)
